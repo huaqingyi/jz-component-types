@@ -5,6 +5,8 @@ import { padding } from './padding';
 import { margin } from './margin';
 import { background } from './background';
 import { font } from './font';
+import { textAlign } from './textAlign';
+import { boxShadow } from './boxShadow';
 
 export interface CSSProperties extends CSS.Properties<string | number> {
     /**
@@ -22,13 +24,25 @@ export type StyleConfigurations<CSS> = {
 }
 
 export interface StyleConfiguration {
+    // 标题
     title: string;
+    // 输入类型
     type: StyleInputType;
+    // 按钮 icon
+    icon?: string;
+    // 输入类型为 BUTTONSWITCH value 为按钮值
+    value?: string;
+    // 子表单
     config?: StyleConfigurations<CSSProperties>;
+    // 输入类型为 SELECT 时 该字段控制多选
     multiple?: boolean;
+    // 输入类型为 SELECT 时 的下拉选项值
     store?: string[];
+    // 当类型为 BUTTONSWITCH 同一个样式有多个值时
+    buttons?: StyleConfiguration[];
+    attrs?: StyleConfiguration[];
 }
 
 export const styles: StyleConfigurations<CSSProperties> = {
-    border, padding, margin, background, font,
+    border, padding, margin, background, font, textAlign, boxShadow
 };

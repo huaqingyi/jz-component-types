@@ -9,10 +9,13 @@ export enum StyleInputType {
     UPLOAD,
     // 多个配置 如 border -> [boderleft,....]
     ARRAY,
+    // box-shadow: [xxx,xxx,xxx]
+    ATTRARRAY,
     // 取色器
     COLORPICKER,
     // boolean 选择
     SWITCH,
     // 类似于 word 的样式按钮
     BUTTONSWITCH,
+    SILDER
 }

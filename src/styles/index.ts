@@ -20,10 +20,10 @@ export interface CSSProperties extends CSS.Properties<string | number> {
 }
 
 export type StyleConfigurations<CSS> = {
-    [P in keyof CSS]: StyleConfiguration;
+    [P in keyof CSS]: StyleConfig;
 }
 
-export interface StyleConfiguration {
+export interface StyleConfig {
     // 标题
     title: string;
     // 输入类型
@@ -39,8 +39,12 @@ export interface StyleConfiguration {
     // 输入类型为 SELECT 时 的下拉选项值
     store?: string[];
     // 当类型为 BUTTONSWITCH 同一个样式有多个值时
-    buttons?: StyleConfiguration[];
-    attrs?: StyleConfiguration[];
+    buttons?: StyleConfig[];
+    attrs?: StyleConfig[];
+}
+
+export interface StyleConfiguration extends StyleConfigurations<CSSProperties> {
+
 }
 
 export const styles: StyleConfigurations<CSSProperties> = {

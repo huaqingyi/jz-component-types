@@ -3,9 +3,9 @@ import * as CSS from 'csstype';
 export interface CSSProperties extends CSS.Properties<string | number> {
 }
 export declare type StyleConfigurations<CSS> = {
-    [P in keyof CSS]: StyleConfiguration;
+    [P in keyof CSS]: StyleConfig;
 };
-export interface StyleConfiguration {
+export interface StyleConfig {
     title: string;
     type: StyleInputType;
     icon?: string;
@@ -13,7 +13,9 @@ export interface StyleConfiguration {
     config?: StyleConfigurations<CSSProperties>;
     multiple?: boolean;
     store?: string[];
-    buttons?: StyleConfiguration[];
-    attrs?: StyleConfiguration[];
+    buttons?: StyleConfig[];
+    attrs?: StyleConfig[];
+}
+export interface StyleConfiguration extends StyleConfigurations<CSSProperties> {
 }
 export declare const styles: StyleConfigurations<CSSProperties>;

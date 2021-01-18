@@ -1,6 +1,6 @@
 {
   "name": "jz-component-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -18,7 +18,8 @@
   "homepage": "https://github.com/huaqingyi/jz-component-types#readme",
   "dependencies": {
     "@types/node": "^14.14.21",
-    "gyi": "^1.0.5"
+    "gyi": "^1.0.5",
+    "jz-configuration-types": "^1.0.2"
   },
   "devDependencies": {
     "csstype": "^3.0.6"

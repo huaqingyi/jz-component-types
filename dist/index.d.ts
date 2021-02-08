@@ -1,12 +1,12 @@
 import { StyleConfiguration } from './styles';
-import { AttrConfiguration } from './attrs';
+import { AttrConfigurations } from './attrs';
 import { Event } from 'jz-configuration-types';
 export interface EventConfiguration {
     [eventName: string]: Event;
 }
 export interface ComponentConfiguration {
     styles: StyleConfiguration;
-    attrs: AttrConfiguration;
+    attrs: AttrConfigurations;
     events: EventConfiguration;
 }
 export * from 'jz-configuration-types';

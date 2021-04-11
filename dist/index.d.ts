@@ -8,6 +8,7 @@ export interface ComponentConfiguration {
     styles: StyleConfiguration;
     attrs: AttrConfigurations;
     events: EventConfiguration;
+    slots?: string | string[];
 }
 export * from 'jz-configuration-types';
 export * from './attrs';

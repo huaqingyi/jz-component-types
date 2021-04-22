@@ -15,4 +15,6 @@ export enum AttrInputType {
     SWITCH,
     // 宫格选择
     GRIDSELECT,
+    // 循环
+    NOOP,
 }

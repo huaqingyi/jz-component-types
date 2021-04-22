@@ -19,6 +19,8 @@ var AttrInputType;
     AttrInputType[AttrInputType["SWITCH"] = 6] = "SWITCH";
     // 宫格选择
     AttrInputType[AttrInputType["GRIDSELECT"] = 7] = "GRIDSELECT";
+    // 循环
+    AttrInputType[AttrInputType["NOOP"] = 8] = "NOOP";
 })(AttrInputType = exports.AttrInputType || (exports.AttrInputType = {}));
 
 //# sourceMappingURL=../sourcemaps/attrs/enums.js.map

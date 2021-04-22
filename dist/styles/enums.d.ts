@@ -6,5 +6,6 @@ export declare enum StyleInputType {
     ATTRARRAY = 4,
     COLORPICKER = 5,
     SWITCH = 6,
-    GRIDSELECT = 7
+    GRIDSELECT = 7,
+    NOOP = 8
 }

@@ -19,6 +19,8 @@ var StyleInputType;
     StyleInputType[StyleInputType["SWITCH"] = 6] = "SWITCH";
     // 宫格选择
     StyleInputType[StyleInputType["GRIDSELECT"] = 7] = "GRIDSELECT";
+    // 循环
+    StyleInputType[StyleInputType["NOOP"] = 8] = "NOOP";
 })(StyleInputType = exports.StyleInputType || (exports.StyleInputType = {}));
 
 //# sourceMappingURL=../sourcemaps/styles/enums.js.map

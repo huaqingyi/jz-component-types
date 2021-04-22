@@ -9,11 +9,14 @@ export interface StyleConfig {
     title: string;
     type: StyleInputType;
     icon?: string;
-    value?: string;
+    value?: any;
     config?: StyleConfigurations<CSSProperties>;
     multiple?: boolean;
-    store?: string[];
-    buttons?: StyleConfig[];
+    options?: Array<{
+        name?: string;
+        data: any;
+        map: any;
+    }>;
     attrs?: StyleConfig[];
 }
 export interface StyleConfiguration extends StyleConfigurations<CSSProperties> {

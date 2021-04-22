@@ -7,7 +7,7 @@ export const backgroundColor = {
 
 export const backgroundImage = {
     title: '背景图片',
-    type: StyleInputType.INPUTUPLOAD,
+    type: StyleInputType.UPLOAD,
 };
 
 export const background = {

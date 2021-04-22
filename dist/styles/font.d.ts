@@ -30,7 +30,12 @@ export declare const fontFamily: {
     title: string;
     type: StyleInputType;
     multiple: boolean;
-    store: string[];
+    value: string[];
+    options: {
+        name: string;
+        data: string;
+        map: string;
+    }[];
 };
 export declare const font: {
     title: string;
@@ -63,7 +68,12 @@ export declare const font: {
             title: string;
             type: StyleInputType;
             multiple: boolean;
-            store: string[];
+            value: string[];
+            options: {
+                name: string;
+                data: string;
+                map: string;
+            }[];
         };
         fontSize: {
             title: string;

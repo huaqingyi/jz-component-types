@@ -31,15 +31,13 @@ export interface StyleConfig {
     // 按钮 icon
     icon?: string;
     // 输入类型为 BUTTONSWITCH value 为按钮值
-    value?: string;
+    value?: any;
     // 子表单
     config?: StyleConfigurations<CSSProperties>;
     // 输入类型为 SELECT 时 该字段控制多选
     multiple?: boolean;
-    // 输入类型为 SELECT 时 的下拉选项值
-    store?: string[];
     // 当类型为 BUTTONSWITCH 同一个样式有多个值时
-    buttons?: StyleConfig[];
+    options?: Array<{ name?: string; data: any; map: any; }>;
     attrs?: StyleConfig[];
 }
 

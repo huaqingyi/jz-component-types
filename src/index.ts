@@ -1,5 +1,5 @@
 import { StyleConfiguration } from './styles';
-import { AttrConfigurations } from './attrs';
+import { AttrConfiguration, AttrConfigurations } from './attrs';
 import { Event } from 'jz-configuration-types';
 
 export interface EventConfiguration {
@@ -10,7 +10,7 @@ export interface ComponentConfiguration {
     styles: StyleConfiguration;
     attrs: AttrConfigurations;
     events: EventConfiguration;
-    slots?: string | string[];
+    slots?: Array<{ tag: string; attrs?: AttrConfigurations; content?: AttrConfiguration; noop?: boolean; }>;
 }
 
 export * from 'jz-configuration-types';

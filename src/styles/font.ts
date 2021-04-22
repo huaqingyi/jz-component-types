@@ -2,21 +2,21 @@ import { StyleInputType } from './enums';
 
 export const fontWeight = {
     title: '加粗',
-    type: StyleInputType.BUTTONSWITCH,
+    type: StyleInputType.UPLOAD,
     value: 'bold',
     icon: 'iconbold',
 };
 
 export const fontStyle = {
     title: '斜体',
-    type: StyleInputType.BUTTONSWITCH,
+    type: StyleInputType.UPLOAD,
     value: 'italic',
     icon: 'iconitalic',
 };
 
 export const textDecoration = {
     title: '下滑线',
-    type: StyleInputType.BUTTONSWITCH,
+    type: StyleInputType.UPLOAD,
     value: 'underline',
     icon: 'iconunderline',
 };
@@ -36,7 +36,15 @@ export const fontFamily = {
     title: '字体',
     type: StyleInputType.SELECT,
     multiple: true,
-    store: ['Times', 'TimesNR', 'New Century Schoolbook', 'Georgia', 'New York', 'serif'],
+    // options: ['Times', 'TimesNR', 'New Century Schoolbook', 'Georgia', 'New York', 'serif'],
+    value: ['Times', 'TimesNR', 'New Century Schoolbook', 'Georgia', 'New York', 'serif'],
+    options: [
+        { name: 'Times', data: 'Times', map: 'Times' },
+        { name: 'TimesNR', data: 'TimesNR', map: 'TimesNR' },
+        { name: 'Times', data: 'Times', map: 'Times' },
+        { name: 'Times', data: 'Times', map: 'Times' },
+        { name: 'Times', data: 'Times', map: 'Times' },
+    ],
 };
 
 export const font = {

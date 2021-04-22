@@ -1,12 +1,10 @@
 export declare enum StyleInputType {
     INPUT = 0,
-    INPUTUPLOAD = 1,
-    SELECT = 2,
-    UPLOAD = 3,
-    ARRAY = 4,
-    ATTRARRAY = 5,
-    COLORPICKER = 6,
-    SWITCH = 7,
-    BUTTONSWITCH = 8,
-    SILDER = 9
+    SELECT = 1,
+    UPLOAD = 2,
+    ARRAY = 3,
+    ATTRARRAY = 4,
+    COLORPICKER = 5,
+    SWITCH = 6,
+    GRIDSELECT = 7
 }

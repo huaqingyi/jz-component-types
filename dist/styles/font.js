@@ -4,19 +4,19 @@ exports.font = exports.fontFamily = exports.fontSize = exports.color = exports.t
 var enums_1 = require("./enums");
 exports.fontWeight = {
     title: '加粗',
-    type: enums_1.StyleInputType.BUTTONSWITCH,
+    type: enums_1.StyleInputType.UPLOAD,
     value: 'bold',
     icon: 'iconbold',
 };
 exports.fontStyle = {
     title: '斜体',
-    type: enums_1.StyleInputType.BUTTONSWITCH,
+    type: enums_1.StyleInputType.UPLOAD,
     value: 'italic',
     icon: 'iconitalic',
 };
 exports.textDecoration = {
     title: '下滑线',
-    type: enums_1.StyleInputType.BUTTONSWITCH,
+    type: enums_1.StyleInputType.UPLOAD,
     value: 'underline',
     icon: 'iconunderline',
 };
@@ -33,7 +33,15 @@ exports.fontFamily = {
     title: '字体',
     type: enums_1.StyleInputType.SELECT,
     multiple: true,
-    store: ['Times', 'TimesNR', 'New Century Schoolbook', 'Georgia', 'New York', 'serif'],
+    // options: ['Times', 'TimesNR', 'New Century Schoolbook', 'Georgia', 'New York', 'serif'],
+    value: ['Times', 'TimesNR', 'New Century Schoolbook', 'Georgia', 'New York', 'serif'],
+    options: [
+        { name: 'Times', data: 'Times', map: 'Times' },
+        { name: 'TimesNR', data: 'TimesNR', map: 'TimesNR' },
+        { name: 'Times', data: 'Times', map: 'Times' },
+        { name: 'Times', data: 'Times', map: 'Times' },
+        { name: 'Times', data: 'Times', map: 'Times' },
+    ],
 };
 exports.font = {
     title: '字体',

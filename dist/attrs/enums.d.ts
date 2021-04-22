@@ -3,7 +3,8 @@ export declare enum AttrInputType {
     SELECT = 1,
     UPLOAD = 2,
     ARRAY = 3,
-    COLORPICKER = 4,
-    SWITCH = 5,
-    SLOT = 6
+    ATTRARRAY = 4,
+    COLORPICKER = 5,
+    SWITCH = 6,
+    GRIDSELECT = 7
 }

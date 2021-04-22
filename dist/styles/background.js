@@ -8,7 +8,7 @@ exports.backgroundColor = {
 };
 exports.backgroundImage = {
     title: '背景图片',
-    type: enums_1.StyleInputType.INPUTUPLOAD,
+    type: enums_1.StyleInputType.UPLOAD,
 };
 exports.background = {
     title: '背景',
